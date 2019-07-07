@@ -1,0 +1,63 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.example.github_project"
+        minSdkVersion 19
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+ext {
+    support_version = "28.0.0"
+    constraint_version = "1.1.3"
+    retrofit_version = "2.6.0"
+    rxjava_version = "2.2.4"
+    rxandroid_version = "2.1.0"
+    rxjava_adapter_version = "2.4.0"
+    glide_version = "4.9.0"
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation "com.android.support:appcompat-v7:$support_version"
+    testİmplementation 'junit:junit:4.12'
+    androidTestİmplementation 'com.android.support.test:runner:1.0.2'
+    androidTestİmplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    //Recyclerview, CardView, ConstraintLayout
+    implementation "com.android.support:recyclerview-v7:$support_version"
+    implementation "com.android.support:cardview-v7:$support_version"
+    implementation "com.android.support.constraint:constraint-layout:$constraint_version"
+
+    //Retrofit
+    implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
+
+    //RxJava
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$rxjava_adapter_version"
+    implementation "io.reactivex.rxjava2:rxjava:$rxjava_version"
+    implementation "io.reactivex.rxjava2:rxandroid:$rxandroid_version"
+
+    //Glide
+    implementation "com.github.bumptech.glide:glide:$glide_version"
+}

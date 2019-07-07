@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_large">24dp</dimen>
+    <dimen name="margin_middle">16dp</dimen>
+    <dimen name="margin_small">6dp</dimen>
+
+    <dimen name="radius_large">18dp</dimen>
+    <dimen name="radius_middle">12dp</dimen>
+    <dimen name="radius_small">6dp</dimen>
+
+    <dimen name="text_very_large">24sp</dimen>
+    <dimen name="text_large">20sp</dimen>
+    <dimen name="text_middle">16sp</dimen>
+    <dimen name="text_small">12sp</dimen>
+
+    <dimen name="image_large">72dp</dimen>
+    <dimen name="image_middle">48dp</dimen>
+    <dimen name="image_small">24dp</dimen>
+
+    <dimen name="progressbar_large">72dp</dimen>
+    <dimen name="progressbar_middle">48dp</dimen>
+    <dimen name="progressbar_small">24dp</dimen>
+
+    <dimen name="page_button_size">48dp</dimen>
+</resources>
